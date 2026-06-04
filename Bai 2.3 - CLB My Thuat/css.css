@@ -1,0 +1,82 @@
+
+        /* ==================== CSS ==================== */
+        
+       
+        /* Khung bảng chính cố định độ rộng giữa màn hình */
+        .main-table {
+            background-color: #ffffff;
+            color: #1a237e;
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+        /* Thanh menu phía trên cùng */
+        .menu-bar {
+            background-color: #f08060;
+            color: #ffffff;
+            font-weight: bold;
+            font-size: 14px;
+            padding: 8px 20px;
+        }
+        .menu-bar a {
+            color: #ffffff;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .menu-bar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Class .nen tạo dải màu sọc đứng "ảo diệu" bằng CSS chuyển sắc tự động */
+        .nen {
+            width: 15px;
+            background: linear-gradient(to bottom, #00bcd4, #e91e63, #4caf50, #ff9800);
+        }
+
+        /* Nội dung văn bản chính */
+        .content-cell {
+            padding: 20px;
+            vertical-align: top;
+        }
+
+        .main-title {
+            color: #ff6600;
+            font-size: 36px;
+            font-weight: bold;
+            margin: 0 0 15px 0;
+        }
+
+        .intro-text {
+            color: #006699;
+            font-weight: bold;
+            vertical-align: top;
+            padding-left: 15px;
+        }
+
+        .guide-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .guide-list li {
+            margin-bottom: 10px;
+        }
+
+        .author {
+            text-align: right;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        /* Cột chứa danh sách ảnh bên phải */
+        .right-gallery {
+            width: 150px;
+            vertical-align: top;
+            padding: 20px 10px;
+            text-align: center;
+        }
+        .right-gallery img {
+            border: 4px solid #ffffff;
+            box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+            margin-bottom: 15px;
+        }
+   
