@@ -1,0 +1,44 @@
+<html>
+<head>
+<title>Excite</title>
+</head>
+
+<body background="IMAGES/BACKGR.GIF" text="#fff" link="#f00">
+
+<br><br>
+
+<img src="IMAGES/banner.GIF">
+<br><br>
+
+<p>
+Excite@Home <b><a href="#">Reduces workforce</a></b> as operations wind down.
+</p>
+
+<p>
+Excite@Home Announces AT&T
+<a href="#">Termination of Pending Assets Purchase Agreement</a>
+<br> and Transition Agreement
+</p>
+
+<p>Archived press releases</p>
+
+<p><b>Vendor Information:</b></p>
+
+<p>
+Excite@Home has established a Vendor Information Hotline to answer questions
+you may have <br> regarding the company's recent developments.
+</p>
+
+<img src="IMAGES/WORK.GIF">
+
+<p>
+<a href="http://work.home.net/">http://work.home.net/</a>
+with high-speed, fully managed data services designed to meet demand.
+</p>
+
+<p>
+Copyright (c) 1995-2002 At Home Corporation. All Rights Reserved.
+</p>
+
+</body>
+</html
