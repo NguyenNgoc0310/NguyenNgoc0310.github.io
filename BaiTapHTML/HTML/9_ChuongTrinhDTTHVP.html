@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chương Trình Đào Tạo - Storm Tech</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Nền sấm sét huyền ảo chất lượng cao, bao phủ toàn bộ trang web */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('https://images.unsplash.com/photo-1492011221367-f47e3ccd77a0?w=1200&auto=format&fit=crop&q=80');
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+        }
+
+        /* Tấm kính mờ (Glassmorphism) - Bí kíp giúp cứu nguy cho độ tương phản chữ */
+        .training-card {
+            background: rgba(15, 23, 42, 0.8); /* Nền tối mờ che bớt chi tiết sấm sét phía sau chữ */
+            backdrop-filter: blur(12px); /* Hiệu ứng làm mờ kính cực xịn */
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 24px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Tiêu đề chính "CHƯƠNG TRÌNH ĐÀO TẠO" phát sáng Neon xanh cực rõ */
+        .main-title {
+            text-align: center;
+            color: #06b6d4;
+            font-size: 2rem;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 35px;
+            text-shadow: 0 0 15px rgba(6, 182, 212, 0.6);
+        }
+
+        /* Khung chia 2 cột cho gọn gàng và hiện đại */
+        .program-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+        }
+
+        /* Từng khối danh mục môn học */
+        .program-section {
+            background: rgba(255, 255, 255, 0.02);
+            border-radius: 16px;
+            padding: 25px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        /* Tiêu đề phụ màu đỏ rực rỡ và dễ đọc trên nền tối */
+        .sub-title {
+            color: #ef4444;
+            font-size: 1.15rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            letter-spacing: 0.5px;
+            text-shadow: 0 0 10px rgba(239, 68, 68, 0.3);
+            border-bottom: 2px solid rgba(239, 68, 68, 0.2);
+            padding-bottom: 8px;
+        }
+
+        /* Danh sách môn học */
+        .course-list {
+            list-style: none;
+        }
+
+        .course-list li {
+            color: #e2e8f0; /* Màu chữ trắng bạc cực kỳ dễ đọc */
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+        }
+
+        /* Thêm ký tự icon mũi tên điện tử đầu dòng thay cho dấu chấm tròn nhàm chán */
+        .course-list li::before {
+            content: "⚡";
+            color: #f59e0b; /* Màu vàng tia sét */
+            margin-right: 10px;
+            font-size: 0.85rem;
+        }
+
+        /* Co giãn mượt mà khi xem trên điện thoại */
+        @media (max-width: 650px) {
+            .program-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+            .main-title {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Khung kính mờ cứu cánh cho nền sấm sét của image_92cd60.jpg -->
+    <div class="training-card">
+        
+        <h2 class="main-title">Chương Trình Đào Tạo</h2>
+        
+        <div class="program-grid">
+            <!-- Khối 1: Tin học văn phòng -->
+            <div class="program-section">
+                <h3 class="sub-title">Tin Học Văn Phòng</h3>
+                <ul class="course-list">
+                    <li>Tin học căn bản & WindowsXP</li>
+                    <li>Soạn Thảo văn bản MicroSoft Word 2003</li>
+                    <li>Xử lý bảng tính MicroSoft Excel 2003</li>
+                </ul>
+            </div>
+
+            <!-- Khối 2: Tin học quản lý -->
+            <div class="program-section">
+                <h3 class="sub-title">Tin Học Quản Lý</h3>
+                <ul class="course-list">
+                    <li>Lập trình CSDL MicroSoft Access 2003</li>
+                    <li>Thiết kế trình chiếu MicroSoft PowerPoint 2003</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập Web Cơ Bản</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Hình nền mờ phía sau - Đổi sang hình văn phòng công nghệ nhẹ nhàng hợp với bài viết */
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 40px;
+            background-image: url('https://images.unsplash.com/photo-1497366216548-37526070297c?w=1200&auto=format&fit=crop&q=40');
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Khung màu trắng bao quanh nội dung bài viết */
+        .article-container {
+            background-color: #ffffff;
+            max-width: 800px;
+            width: 95%;
+            padding: 35px;
+            border: 1px solid #ccc;
+        }
+
+        /* Tiêu đề in đậm, căn giữa */
+        .article-title {
+            text-align: center;
+            font-size: 1.6rem;
+            font-weight: bold;
+            color: #000000;
+            margin-bottom: 25px;
+        }
+
+        /* Phần thân chia làm 2 cột: chữ bên trái, ảnh bên phải */
+        .article-body {
+            display: flex;
+            gap: 20px;
+        }
+
+        /* Cột chữ bên trái căn đều 2 bên */
+        .article-text {
+            flex: 1;
+            font-size: 1rem;
+            color: #000000;
+            line-height: 1.6;
+            text-align: justify;
+        }
+
+        /* Khối chứa ảnh minh họa và chú thích bên phải */
+        .article-media {
+            width: 180px;
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        /* Ảnh chân dung Bill Gates thay cho ảnh cũ */
+        .article-media img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #000000;
+            margin-bottom: 8px;
+        }
+
+        /* Chú thích in nghiêng dưới ảnh */
+        .article-media span {
+            font-size: 0.85rem;
+            color: #000000;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Khung nội dung mô phỏng theo tỷ lệ chuẩn của image_92d4bd.png -->
+    <div class="article-container">
+        <h1 class="article-title">Máy tính "bó tay" với tài sản của Bill Gates</h1>
+        
+        <div class="article-body">
+            <!-- Văn bản nội dung bài viết -->
+            <p class="article-text">
+                Bill Gates, người sáng lập Công ty phần mềm Microsoft và là người giàu nhất thế giới, cho biết cơ quan thuế của Mỹ phải lưu trữ các dữ liệu tài chính của ông vào một máy tính đặc biệt, bởi tài sản của ông quá nhiều. Phát biểu tại một hội nghị do Microsoft tổ chức ở Lisbon, thủ đô Bồ Đào Nha, ông cho rằng một máy tính thông thường không thể xử lý đúng các số liệu tài chính của ông....
+            </p>
+            
+            <!-- Khối ảnh minh họa hợp lý bên phải -->
+            <div class="article-media">
+                <!-- Đã đổi thành ảnh chân dung Bill Gates mặc vest -->
+                <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=200&auto=format&fit=crop&q=80" alt="Bill Gates">
+                <span>Bill Gates thăm Việt Nam</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
