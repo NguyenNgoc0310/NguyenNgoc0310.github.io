@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Màn hình tải nội dung</title>
+    <style>
+        /* Cài đặt cơ bản cho trang */
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #f7e6c9 0%, #e0d0b0 100%); /* Nền chuyển màu kem vàng nhẹ */
+            font-family: 'Arial', sans-serif; /* Phông chữ cơ bản, dễ đọc */
+        }
+
+        /* Container chính cho hiệu ứng mờ kính */
+        .loading-container {
+            width: 80%; /* Chiều rộng tương đối */
+            max-width: 800px; /* Chiều rộng tối đa */
+            padding: 50px;
+            background: rgba(255, 255, 255, 0.4); /* Nền trắng trong suốt */
+            border-radius: 15px; /* Bo góc */
+            backdrop-filter: blur(10px); /* Hiệu ứng mờ */
+            -webkit-backdrop-filter: blur(10px); /* Hỗ trợ cho Safari */
+            border: 1px solid rgba(255, 255, 255, 0.6); /* Viền mờ nhẹ */
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.1); /* Bóng mờ */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Biểu tượng tài liệu */
+        .doc-icon {
+            font-size: 60px; /* Kích thước biểu tượng */
+            color: #8c735c; /* Màu đồng thau */
+            margin-bottom: 20px;
+        }
+
+        /* Văn bản chính */
+        .main-text {
+            font-size: 24px; /* Kích thước chữ */
+            color: #8c735c; /* Màu đồng thau */
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        /* Văn bản phụ */
+        .sub-text {
+            font-size: 16px; /* Kích thước chữ nhỏ hơn */
+            color: #bfa18a; /* Màu đồng thau nhạt hơn */
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="loading-container">
+        <div class="doc-icon">📄</div>
+        
+        <div class="main-text">Hãy chọn nội dung bạn muốn hiển thị </div>
